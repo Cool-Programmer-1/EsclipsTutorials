@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <filter>
+    <display-name>PrimeCheck</display-name>
+    <filter-name>PrimeCheck</filter-name>
+    <filter-class>in.sp.filter.PrimeCheck</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>PrimeCheck</filter-name>
+    <url-pattern>/PrimeCheck</url-pattern>
+  </filter-mapping>
+  <display-name>PrimeNumber1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>primeCheck</display-name>
+    <servlet-name>primeCheck</servlet-name>
+    <servlet-class>in.sp.servlet.primeCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>primeCheck</servlet-name>
+    <url-pattern>/primeCheck</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>F1</display-name>
+    <filter-name>F1</filter-name>
+    <filter-class>in.sp.servlet.F1</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>F1</filter-name>
+    <url-pattern>/F1</url-pattern>
+  </filter-mapping>
+</web-app>

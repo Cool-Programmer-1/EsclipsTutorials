@@ -1,0 +1,37 @@
+<web-app>
+    <servlet>
+        <servlet-name>ValidationServlet</servlet-name>
+        <servlet-class>example.ValidationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ValidationServlet</servlet-name>
+        <url-pattern>/entry</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>example.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SubServlet</servlet-name>
+        <servlet-class>example.SubServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet</servlet-name>
+        <url-pattern>/sub</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResponseServlet</servlet-name>
+        <servlet-class>example.ResponseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResponseServlet</servlet-name>
+        <url-pattern>/resp</url-pattern>
+    </servlet-mapping>
+</web-app>
